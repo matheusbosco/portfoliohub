@@ -6,12 +6,15 @@ Projetos desenvolvidos durante o curso de **Engenharia de Software** na UniCEUB.
 
 | Projeto | Descrição | Status |
 |---------|-----------|--------|
-| [`portfoliohub/`](portfoliohub/) | Portfólio pessoal com HTML, CSS e JS | Em desenvolvimento |
+| [`portfoliohub/`](portfoliohub/) | Portfólio pessoal com HTML, CSS e JS | Concluído — v1.0 publicada |
 
 ## Bootcamp I
 
-Disciplina de introdução a ferramentas e práticas de desenvolvimento de software:
-- Versionamento com Git e GitHub
-- Estrutura de projetos
+**Período:** 2026 · Disciplina de introdução a ferramentas e práticas de desenvolvimento de software.
+
+Conteúdo coberto:
+- Versionamento com Git e GitHub (commits, branches, histórico)
+- Estrutura e organização de repositórios
 - Publicação web com GitHub Pages
-- Documentação com Markdown
+- Documentação técnica com Markdown
+- Integração de repositório com perfil profissional (LinkedIn)

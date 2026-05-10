@@ -8,17 +8,28 @@ Portfólio pessoal desenvolvido como projeto do **Bootcamp I — UniCEUB**.
 
 ## Sobre o projeto
 
-Página web responsiva que apresenta o perfil acadêmico e profissional de Matheus Bosco, com seções de apresentação, stack tecnológica, projetos e contato.
+Página web responsiva que apresenta o perfil acadêmico e profissional de Matheus Bosco, com seções de apresentação, stack tecnológica, experiência profissional, projetos e contato.
+
+## Funcionalidades
+
+- **Hero** — apresentação com nome, curso e bio profissional
+- **Stack** — IBM z/OS, JCL, Control-M, SRE, Python, SQL, Git, HTML/CSS/JS
+- **Experiência** — card detalhado com cargo e atividades no Banco do Brasil
+- **Projetos** — cards com descrição, tecnologias e link para o repositório
+- **Contato** — links para GitHub e LinkedIn
+- Scroll suave entre seções
+- Animações de entrada (IntersectionObserver)
+- Design responsivo com tema escuro
 
 ## Tecnologias
 
 | Tecnologia | Uso |
 |------------|-----|
-| HTML5 | Estrutura e semântica |
-| CSS3 | Estilização, variáveis CSS, grid, animações |
-| JavaScript (ES6+) | Scroll suave, animações de entrada com IntersectionObserver |
-| Git | Versionamento |
-| GitHub Pages | Hospedagem gratuita |
+| HTML5 | Estrutura semântica |
+| CSS3 | Variáveis CSS, Flexbox, Grid, animações |
+| JavaScript (ES6+) | Scroll suave, animações de entrada |
+| Git | Versionamento com Conventional Commits |
+| GitHub Pages | Hospedagem estática gratuita |
 
 ## Estrutura de arquivos
 
@@ -30,35 +41,37 @@ portfoliohub/
 └── README.md     # Este arquivo
 ```
 
-## Screenshot
+## Acesso
 
-> _Página publicada em: https://matheusbosco.github.io/portfoliohub/_
+A página está publicada em: **https://matheusbosco.github.io/portfoliohub/**
 
-## Como rodar localmente
+Para abrir localmente:
 
 ```bash
-# Clone o repositório
 git clone https://github.com/matheusbosco/portfoliohub.git
-
-# Acesse a pasta do projeto
 cd portfoliohub/academico/portfoliohub
-
-# Abra no navegador
 start index.html
-# ou use um servidor local
-npx serve .
 ```
 
 ## Versionamento
 
-| Commit | Descrição |
-|--------|-----------|
-| `chore: initial repository structure` | Criação das pastas `academico/`, `pessoal/`, `docs/` |
-| `feat: add portfoliohub v1.0 web page` | Página HTML/CSS/JS funcional |
-| `docs: add README files for all sections` | READMEs em todas as pastas |
+| Commit | Tipo | Descrição |
+|--------|------|-----------|
+| `8a2df5e` | `chore` | Criação das pastas `academico/`, `pessoal/`, `docs/` e `.gitignore` |
+| `d2844be` | `feat` | Página HTML/CSS/JS funcional (v1.0) |
+| `59a3f33` | `docs` | READMEs em todas as pastas |
+| `9d09161` | `chore` | Redirect na raiz para o GitHub Pages |
+| `16d863f` | `feat` | Portfólio atualizado com experiência e stack reais |
+
+## Integração com LinkedIn
+
+O projeto está adicionado ao perfil do LinkedIn de Matheus Bosco:
+- Seção **Projetos**: PortfolioHub com link do GitHub Pages
+- Seção **Em Destaque**: link direto para a página publicada
+
+🔗 [linkedin.com/in/matheusbosco](https://linkedin.com/in/matheusbosco)
 
 ## Autor
 
-**Matheus Bosco**  
-Engenharia de Software · UniCEUB · 2026  
+**Matheus Bosco** — Assessor de TI · Banco do Brasil | Engenharia de Software · UniCEUB · 2026  
 [github.com/matheusbosco](https://github.com/matheusbosco) · [linkedin.com/in/matheusbosco](https://linkedin.com/in/matheusbosco)
