@@ -1,0 +1,11 @@
+# Donos do código — revisão obrigatória nos Pull Requests
+# (requer "Require review from Code Owners" na branch protection)
+
+# Todo o repositório
+*                          @matheusbosco
+
+# Site do portfólio
+/academico/portfoliohub/   @matheusbosco
+
+# Configurações de CI e automações
+/.github/                  @matheusbosco

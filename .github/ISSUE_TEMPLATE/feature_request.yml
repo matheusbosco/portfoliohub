@@ -1,0 +1,19 @@
+name: "✨ Sugerir melhoria"
+description: "Proponha uma nova funcionalidade ou melhoria"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: "Qual problema isso resolve?"
+      placeholder: "Sinto falta de..."
+    validations:
+      required: true
+  - type: textarea
+    id: solucao
+    attributes:
+      label: "Solução proposta"
+      placeholder: "Poderia adicionar..."
+    validations:
+      required: true
