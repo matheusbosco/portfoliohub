@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar-html:
+    name: Validar HTML (HTMLHint)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validar arquivos HTML
+        run: npx --yes htmlhint "**/*.html"
+
+  verificar-links:
+    name: Verificar links (Lychee)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Checar links quebrados
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--no-progress --exclude linkedin.com './**/*.html' './**/*.md'"
+          fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
